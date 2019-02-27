@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SpriteKit
+
 
 class ViewController: UIViewController {
     let VIEW_TAG = 100
@@ -25,6 +27,7 @@ class ViewController: UIViewController {
             createLabelInCircle(atPosition: sender.frame.origin)
         }
         increaseLabelCount()
+        crateParticle(onView: sender)
         
     }
     
@@ -64,7 +67,7 @@ class ViewController: UIViewController {
         let  labelCount = (Int)(countLabel.text ?? "0")
         countLabel.text = "+\(labelCount!  + 1)"
         if labelCount! > 0 {
-        countLabel.zoomInWithEasing(withDuration: 0.11, easingOffset: 0.3)
+            countLabel.zoomInWithEasing(withDuration: 0.11, easingOffset: 0.3)
         }
         callDisappearView()
         
@@ -91,6 +94,37 @@ class ViewController: UIViewController {
         }) {  (complete) in
             countLabel.removeFromSuperview()
         }
+        
+    }
+    
+    
+    func crateParticle(onView particleView : UIView){
+        
+        print("Called")
+        
+        let sk: SKView = SKView()
+        sk.frame = particleView.bounds
+        sk.backgroundColor = .clear
+        particleView.addSubview(sk)
+        
+       
+        let scene: SKScene = SKScene(size: CGSize(width: particleView.bounds.size.width , height: particleView.bounds.size.height ) )
+        scene.scaleMode = .aspectFit
+        scene.backgroundColor = .clear
+        
+        let en = SKEmitterNode(fileNamed: "MyParticle222.sks")
+         en?.position = sk.center
+        
+        
+ 
+        scene.addChild(en!)
+        sk.presentScene(scene)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            sk.removeFromSuperview()
+
+        }
+        
         
     }
 }

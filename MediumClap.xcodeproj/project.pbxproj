@@ -17,6 +17,7 @@
 		9C523DFE22104A7E00A915D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C523DFC22104A7E00A915D9 /* Main.storyboard */; };
 		9C523E0022104A7E00A915D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C523DFF22104A7E00A915D9 /* Assets.xcassets */; };
 		9C523E0322104A7E00A915D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C523E0122104A7E00A915D9 /* LaunchScreen.storyboard */; };
+		9CA9E8552227306100C7BDBE /* MyParticle4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9E8542227306100C7BDBE /* MyParticle4.sks */; };
 		9CF76BF3221E03FB008D5078 /* UiviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF76BF2221E03FB008D5078 /* UiviewExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		9C523DFF22104A7E00A915D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C523E0222104A7E00A915D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C523E0422104A7E00A915D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA9E8542227306100C7BDBE /* MyParticle4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle4.sks; sourceTree = "<group>"; };
 		9CF76BF2221E03FB008D5078 /* UiviewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiviewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +52,7 @@
 		9C523DEC22104A7D00A915D9 = {
 			isa = PBXGroup;
 			children = (
+				9CA9E8542227306100C7BDBE /* MyParticle4.sks */,
 				9C27573A221ECABC00C1622A /* MyParticle222.sks */,
 				9C27572F221EC57600C1622A /* Assets.xcassets */,
 				9C523DF722104A7E00A915D9 /* MediumClap */,
@@ -144,6 +147,7 @@
 				9C27573D221EDA8200C1622A /* Star.png in Resources */,
 				9C523E0322104A7E00A915D9 /* LaunchScreen.storyboard in Resources */,
 				9C523E0022104A7E00A915D9 /* Assets.xcassets in Resources */,
+				9CA9E8552227306100C7BDBE /* MyParticle4.sks in Resources */,
 				9C523DFE22104A7E00A915D9 /* Main.storyboard in Resources */,
 				9C27572B221EC4B200C1622A /* MyParticle.sks in Resources */,
 				9C275731221EC57600C1622A /* Assets.xcassets in Resources */,

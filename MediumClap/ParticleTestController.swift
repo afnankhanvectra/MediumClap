@@ -52,9 +52,9 @@ class ParticleTestController: UIViewController {
         
         en?.particleColor = SKColor.green
 
-         scene.addChild(en!)
+        scene.addChild(en!)
         sk.presentScene(scene)
-        
+ 
     }
 
 }
